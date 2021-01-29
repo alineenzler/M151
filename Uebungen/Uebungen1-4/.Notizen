@@ -1,0 +1,7 @@
+GET                 Vom Server holen.
+
+POST                Auf Server schicken.
+
+Query Parameter     Häufiges Beispiel:  "Request URL"   
+
+Post Paramamter     Werden mit dem Header abgeschickt.
