@@ -17,10 +17,10 @@ class ProductController extends Controller
         die();
     }
 
-    public function detail($id) {
-        $product = \App\Models\Product::find($id);
-        
-        return view('detail', ['detail' => $detail]);
-        dd($id);
+    public function detail($id)
+    {
+        $result = \App\Models\Product::all()->where('id', $id)->first();
+
+        return view('detail', ['detail' => $result]);
     }
 }

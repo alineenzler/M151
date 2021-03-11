@@ -1,14 +1,24 @@
-<table>
-    <tr>
-        <th>Name</th>
-        <th>Preis</th>
-        <th>Details</th>
-    </tr>
-    @foreach ($products as $product)
-        <tr>
-            <td>{{ $product->name }}</td>
-            <td>{{ $product->price }}</td>
-            <td><a href="/product/{{ $product->id }}">Link</a></td>
-        </tr>
-    @endforeach
-</table>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Laravel | Detailpage</title>
+        <link rel="stylesheet" href="{{ asset('custom.css') }}">
+    </head>
+    <body>
+        <a href="../products">Back</a>
+
+        <div>
+            <h1>{{ $detail->name }}</h1>
+            <img src="{{ $detail->image }}">
+
+            <h3>Preis:</h3>
+            <p>{{ $detail->price }}.-</p>
+
+            <h3>Gebrauch:</h3>
+            <p>{{ $detail->details }}</p>
+
+            <h3>Beschreibung:</h3>
+            <p>{{ $detail->manual }}</p>
+        </div>
+    </body>
+</html>
