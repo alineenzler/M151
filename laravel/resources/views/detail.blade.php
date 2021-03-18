@@ -6,19 +6,31 @@
     </head>
     <body>
         <a href="../products">Back</a>
-
         <div>
             <h1>{{ $detail->name }}</h1>
-            <img src="{{ $detail->image }}">
+            <img class="detail-image" src="{{ $detail->image }}">
+            <table id="detail">
+                <tr>
+                    <th>Preis</th>
+                </tr>
+                <tr>
+                    <td>CHF {{ $detail->price }}</td>
+                </tr>
 
-            <h3>Preis:</h3>
-            <p>{{ $detail->price }}.-</p>
+                <tr>
+                    <th>Gebrauch</th>
+                </tr>
+                <tr>
+                    <td>{{ $detail->details }}</td>
+                </tr>
 
-            <h3>Gebrauch:</h3>
-            <p>{{ $detail->details }}</p>
-
-            <h3>Beschreibung:</h3>
-            <p>{{ $detail->manual }}</p>
+                <tr>
+                    <th>Beschreibung</th>
+                </tr>
+                <tr>
+                    <td>{{ $detail->manual }}</td>
+                </tr>
+            </table>
         </div>
     </body>
 </html>

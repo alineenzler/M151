@@ -5,7 +5,8 @@
         <link rel="stylesheet" href="{{ asset('custom.css') }}">
     </head>
     <body>
-        <table>
+        <h1>Quietscheentchen Onlineshop</h1>
+        <table id="products">
             <tr>
                 <th>Name</th>
                 <th>Preis</th>
@@ -15,7 +16,7 @@
                 <tr>
                     <td>{{ $product->name }}</td>
                     <td>{{ $product->price }}</td>
-                    <td><a href="/product/{{ $product->id }}">Link</a></td>
+                    <td><a href="/product/{{ $product->id }}">show details</a></td>
                 </tr>
             @endforeach
         </table>
