@@ -18,14 +18,14 @@
                 </tr>
 
                 <tr>
-                    <th>Gebrauch</th>
+                    <th>Beschreibung</th>
                 </tr>
                 <tr>
                     <td>{{ $detail->details }}</td>
                 </tr>
 
                 <tr>
-                    <th>Beschreibung</th>
+                    <th>Gebrauch</th>
                 </tr>
                 <tr>
                     <td>{{ $detail->manual }}</td>

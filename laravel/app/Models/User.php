@@ -41,3 +41,12 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 }
+
+class User extends Model
+{
+    use HasFactory;
+
+    public function orders() {
+        return $this->hasMany(\App\Models\Order::class);
+    }
+}
