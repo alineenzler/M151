@@ -5,7 +5,9 @@
         <link rel="stylesheet" href="{{ asset('custom.css') }}">
     </head>
     <body>
-        <a href="../products">Back</a>
+        <form action="../products">
+            <input class="back-button" type="submit" value="Back" />
+        </form>
         <div>
             <h1>{{ $detail->name }}</h1>
             <img class="detail-image" src="{{ $detail->image }}">
@@ -14,7 +16,7 @@
                     <th>Preis</th>
                 </tr>
                 <tr>
-                    <td>CHF {{ $detail->price }}</td>
+                    <td>CHF {{ number_format($detail->price, 2) }}</td>
                 </tr>
 
                 <tr>

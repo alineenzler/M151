@@ -15,7 +15,7 @@
             @foreach ($products as $product)
                 <tr>
                     <td>{{ $product->name }}</td>
-                    <td>{{ $product->price }}</td>
+                    <td>CHF {{ number_format($product->price, 2) }}</td>
                     <td><a href="/product/{{ $product->id }}">show details</a></td>
                 </tr>
             @endforeach
