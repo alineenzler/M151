@@ -20,3 +20,10 @@ Route::get('/', function () {
 Route::get('/products', [\App\Http\Controllers\ProductController::class, 'list']);
 
 Route::get('/product/{id}', [\App\Http\Controllers\ProductController::class, 'detail']);
+
+Route::get('/register', [\App\Http\Controllers\AuthController::class, 'register']);
+Route::post('/register', [\App\Http\Controllers\AuthController::class, 'storeUser']);
+
+Route::get('/login', [\App\Http\Controllers\AuthController::class, 'login']);
+Route::post('/login', [\App\Http\Controllers\AuthController::class, 'authenticate']);
+Route::get('logout', [\App\Http\Controllers\AuthController::class, 'logout']);

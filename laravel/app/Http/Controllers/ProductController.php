@@ -11,10 +11,6 @@ class ProductController extends Controller
         $products = \App\Models\Product::all();
 
         return view('products', ['products' => $products]);
-
-        echo "<pre>";
-        var_dump($products);
-        die();
     }
 
     public function detail($id)

@@ -25,6 +25,7 @@ class CreateUsersTable extends Migration
 
             $table->float('zip');
             $table->string('street');
+            $table->string('phone');
             $table->string('city');
         });
     }
