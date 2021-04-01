@@ -35,7 +35,7 @@
             <div class="col-2"></div>
             <div class="col-2">
                 <form action="/order">
-                    <input class="order-button" type="submit" value="Order" />
+                    <input class="order-button" type="submit" value="Bestellen" />
                 </form>
             </div>
     </body>

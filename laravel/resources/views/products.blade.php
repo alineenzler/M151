@@ -26,7 +26,11 @@
             @endforeach
         </table>
 
-            <div class="col-6"><br></div>
+            <div class="col-6">
+                <form action="/basket">
+                    <input class="order-button" type="submit" value="Warenkorb" />
+                </form>
+            </div>
             <div class="col-2 align-right">
                 <form action="/login">
                     <input class="reg-button" type="submit" value="Login" />
