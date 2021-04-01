@@ -33,6 +33,11 @@
                     <td>{{ $detail->manual }}</td>
                 </tr>
             </table>
+
+                <a href="/add/{{$detail->id}}">
+                    <input class="basket-button" value="In Warenkorb" />
+                </a>
+
         </div>
     </body>
 </html>

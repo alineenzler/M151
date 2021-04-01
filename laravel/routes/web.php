@@ -27,3 +27,9 @@ Route::post('/register', [\App\Http\Controllers\AuthController::class, 'storeUse
 Route::get('/login', [\App\Http\Controllers\AuthController::class, 'login']);
 Route::post('/login', [\App\Http\Controllers\AuthController::class, 'authenticate']);
 Route::get('logout', [\App\Http\Controllers\AuthController::class, 'logout']);
+
+Route::get('add/{id}', [\App\Http\Controllers\OrderController::class, 'add']);
+Route::get('basket', [\App\Http\Controllers\OrderController::class, 'basket']);
+
+Route::get('order', [\App\Http\Controllers\OrderController::class, 'order']);
+Route::get('success', [\App\Http\Controllers\OrderController::class, 'success']);

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Laravel | All Products</title>
+        <title>Laravel | Basket</title>
         <link rel="stylesheet" href="{{ asset('custom.css') }}">
     </head>
     <body>
@@ -10,6 +10,10 @@
                 <h1>Quietscheentchen Onlineshop</h1>
             </div>
         </nav>
+
+        <form action="../products">
+            <input class="back-button" type="submit" value="Back" />
+        </form>
 
         <table id="products">
             <tr>
@@ -27,19 +31,11 @@
         </table>
 
             <div class="col-6"><br></div>
-            <div class="col-2 align-right">
-                <form action="/login">
-                    <input class="reg-button" type="submit" value="Login" />
-                </form>
-            </div>
-            <div class="col-2 align-right">
-                <form action="/register">
-                    <input class="reg-button" type="submit" value="Register" />
-                </form>
-            </div>
-            <div class="col-2 align-right">
-                <form action="/logout">
-                    <input class="reg-button" type="submit" value="Log Out" />
+            <div class="col-2"></div>
+            <div class="col-2"></div>
+            <div class="col-2">
+                <form action="/order">
+                    <input class="order-button" type="submit" value="Order" />
                 </form>
             </div>
     </body>
